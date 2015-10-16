@@ -10,9 +10,6 @@ package com.java8test;
  * @author slozic
  */
 @FunctionalInterface
-public interface TestInterface {
-    void printMessage(Object message);
-    default void test(){
-        
-    }
+public interface SimpleInterface<T>  {  
+    void test(T t);
 }
